@@ -110,6 +110,9 @@ article{
 
 #wrapper {
 	padding-left: 0;
+	background: #eee;
+	height: 100%;
+	display: block;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
@@ -196,6 +199,16 @@ article{
 	text-decoration: none;
 }
 
+#overlay {
+	position: fixed;
+	z-index: 1035;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+}
 @media (min-width: 768px) {
 	#wrapper {
 	}

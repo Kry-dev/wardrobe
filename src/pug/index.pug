@@ -6,47 +6,15 @@ html(lang="en")
 	)
 	include mixin/all-mixin
 	body
-		include global/header-2
+		include global/header
 		#wrapper.toggled
 			.container-fluid
 				// Sidebar
-				#sidebar-wrapper
-					ul.sidebar-nav
-						li
-							a(href='#')
-								i.fa.fa-home
-								| Home
-						li
-							a(href='#')
-								i.fa.fa-sign-in
-								| Log in / register
-						li
-							a(href='#')
-								i.fa.fa-plus
-								| Add product
-						li
-							a(href='#')
-								i.fa.fa-book
-								| About
-						li
-							a(href='#')
-								i.fa.fa-pencil
-								| Blog
-						li
-							a(href='#')
-								i.fa.fa-question
-								| Help
+				include global/sidebar
 				// /#sidebar-wrapper
+				#overlay
 				// Page Content
-				#page-content-wrapper
-					.container-fluid
-						.row
-							.col-lg-12
-								br
-								h1 Your Title
-						.row
-							.col-lg-12
-								| Your Content
+				include global/content
 				// /#page-content-wrapper
 		// /#wrapper
 
