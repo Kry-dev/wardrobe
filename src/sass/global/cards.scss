@@ -59,6 +59,13 @@
 			max-height: 200px;
 			margin: 0 auto;
 		}
+		@media (max-width: $screen-sm-min){
+			h3,
+			p,
+			a.d-block{
+				display: none !important;
+			}
+		}
 	}
 	&-header,
 	&-body,
