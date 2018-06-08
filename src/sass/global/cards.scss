@@ -41,6 +41,10 @@
 		padding: 5px;
 		a{
 			color: #000000;
+
+		}
+		&-item{
+			font-weight: bold;
 		}
 	}
 	&-header{
@@ -89,5 +93,9 @@
 	}
 	&-warning{
 		@include bottom-border ($warning);
+	}
+
+	.product-photo{
+
 	}
 }

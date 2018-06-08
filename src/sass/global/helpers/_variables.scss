@@ -11,7 +11,7 @@ $red:     #B50E0B;
 $orange:  #fd7e14;
 $yellow: #fdb32a;
 $green: #93BF4C;
-$teal: #16a085;
+$teal: #27ccc0;
 $cyan:    #17a2b8;
 $gray: #f4f3f3;
 $dark: #2a2a2f;
@@ -31,7 +31,7 @@ $gray-800: $dark;
 $gray-middle: #EEEEEE;
 $black: #212121;
 
-$primary:       $blue;
+$primary:       $teal;
 $secondary:     #ddd;
 $success:       $green;
 $pink:       		$pink;
@@ -125,6 +125,7 @@ $input-bg:									$gray;
 $input-border-radius:					0;
 $custom-select-border-radius:  0;
 
+$font-family-base: 'Montserrat', sans-serif;
 $fa-font-path: "../fonts/FontAwesome";
 $slick-font-path: "./fonts/slick/";
 $slick-loader-path: "../fonts/slick/";
