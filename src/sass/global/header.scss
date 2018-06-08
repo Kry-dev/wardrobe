@@ -28,6 +28,7 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		flex-wrap: nowrap;
+
 		li{
 			display: flex;
 			width: 100%;
@@ -47,6 +48,13 @@
 
 		}
 	}
+	@media (max-width: $screen-sm-min){
+		margin: 0;
+		padding: 0;
+		.navbar-nav{
+			margin: 0;
+		}
+	}
 }
 #category{
 	background: $white;
@@ -55,8 +63,11 @@
 	margin-right: -15px;
 	border-top:1px solid $secondary;
 	float:none;
-	display: table;
+	display: block;
 	table-layout: fixed;
+	@media (max-width: $screen-md-max){
+		display: none;
+	}
 	.navbar-nav{
 		float: none;
 		margin: 0 auto;

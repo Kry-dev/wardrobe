@@ -1,12 +1,12 @@
 nav.navbar.navbar-fixed-top(role='navigation')
 	.container-fluid
-		.navbar-header
-			button#menu-toggle.navbar-toggle
+		.navbar-header.hidden-md.hidden-sm.hidden-xs
+			button.menu-toggle.navbar-toggle
 				i.fa.fa-bars
 				| menu
 			a(href='#').navbar-brand.logo
 				img.img-responsive(src="https://www.staticuw.com/assets/images/uw-logo.png")
-		#main-navbar.navbar-collapse
+		#main-navbar.navbar-collapse.hidden-md.hidden-sm.hidden-xs
 			.navbar-left
 				form.navbar-form(action='#', method='GET')
 					.input-group
@@ -241,4 +241,24 @@ nav.navbar.navbar-fixed-top(role='navigation')
 					a(href='#')
 						span.fa.fa-shopping-cart
 
+		#navbar.navbar-collapse.visible-md.visible-sm.visible-xs
+			ul.nav.navbar-nav
+				li
+					a.menu-toggle.navbar-toggle
+						i.fa.fa-bars
+				li.border.border-left
+					a(href='#').navbar-brand.logo
+						img.img-responsive(src="https://www.staticuw.com/assets/images/uw-logo.png")
+				li.border.border-left
+					a(href='#')
+						span.fa.fa-user(aria-hidden='true')
+				li
+					a(href='#')
+						span.fa.fa-home(aria-hidden='true')
+				li.border.border-right
+					a(href='#')
+						span.fa.fa-shopping-cart
+				li
+					a(href='#')
+						span.fa.fa-search(aria-hidden='true')
 		include header-category
