@@ -96,6 +96,18 @@ mixin calendar-tooltip(link)
 				.col-xs-4
 					img.img-responsive.m-auto(src='assets/img/calendar/pin-01.png')
 
+mixin multi-level-item()
+	li
+		a(href='#') Dropdown Link
+		ul
+			li
+				a(href='#') Dropdown Submenu Link
+			li
+				a(href='#') Dropdown Submenu Link
+			li
+				a(href='#') Dropdown Submenu Link
+			li
+				a(href='#') Dropdown Submenu Link
 //- sprite
 include svg-sprite
 

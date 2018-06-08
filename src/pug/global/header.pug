@@ -12,88 +12,223 @@ nav.navbar.navbar-fixed-top(role='navigation')
 					.input-group
 						input#query.form-control(type='text', placeholder='Search...', name='search', value='')
 						i.fa.fa-search
-			ul.nav.navbar-nav.navbar-left
-				li.dropdown
-					a(href='#', class="dropdown-toggle" data-toggle="dropdown") woman
-					ul.dropdown-menu
+			ul#multi-level.nav.navbar-nav.navbar-left
+				nav
+					ul
 						li
-							a(href='#') Dropdown Link 1
-						li.active
-							a(href='#') Dropdown Link 2
+							a(href='#')
+								| woman
+							// ----levelTwo----
+							ul.levelTwo
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='')
+												| item-level 3
+												i.fa.fa-angle-right.fa-fw
+											// ----levelFour----
+											ul.levelFour
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+											// ----levelFour----
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+									// ----levelThree----
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='')
+												| item-level 3
+												i.fa.fa-angle-right.fa-fw
+											// ----levelFour----
+											ul.levelFour
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+											// ----levelFour----
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+									// ----levelThree----
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='')
+												| item-level 3
+												i.fa.fa-angle-right.fa-fw
+											// ----levelFour----
+											ul.levelFour
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+											// ----levelFour----
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+									// ----levelThree----
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='')
+												| item-level 3
+												i.fa.fa-angle-right.fa-fw
+											// ----levelFour----
+											ul.levelFour
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+												li
+													a(href='') item-level 4
+											// ----levelFour----
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+									// ----levelThree----
+							// ----levelTwo----
 						li
-							a(href='#') Dropdown Link 3
-						li.dropdown.dropdown-submenu
-							a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown Link 4
-							ul.dropdown-menu
+							a(href='#')
+								| man
+							// ----levelTwo----
+							ul.levelTwo
 								li
-									a(href='#') Dropdown Submenu Link 4.1
-								li
-									a(href='#') Dropdown Submenu Link 4.2
-								li
-									a(href='#') Dropdown Submenu Link 4.3
-								li
-									a(href='#') Dropdown Submenu Link 4.4
-						li.dropdown.dropdown-submenu
-							a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown Link 5
-							ul.dropdown-menu
-								li
-									a(href='#') Dropdown Submenu Link 5.1
-								li
-									a(href='#') Dropdown Submenu Link 5.2
-								li
-									a(href='#') Dropdown Submenu Link 5.3
-								li.dropdown.dropdown-submenu
-									a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown Submenu Link 5.4
-									ul.dropdown-menu
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
 										li
-											a(href='#') Dropdown Submenu Link 5.4.1
+											a(href='') item-level 3
 										li
-											a(href='#') Dropdown Submenu Link 5.4.2
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+									// ----levelThree----
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+								li
+									a(href='')
+										| item-level 2
+										i.fa.fa-angle-right.fa-fw
+									// ----levelThree----
+									ul.levelThree
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+										li
+											a(href='') item-level 3
+							// ----levelTwo----
 
-				li.dropdown
-					a(href='#', class="dropdown-toggle" data-toggle="dropdown") man
-					ul.dropdown-menu
-						li.kopie
-							a(href='#') Dropdown2
-						li
-							a(href='#') Dropdown2 Link 1
-						li
-							a(href='#') Dropdown2 Link 2
-						li
-							a(href='#') Dropdown2 Link 3
-						li.dropdown.dropdown-submenu
-							a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown2 Link 4
-							ul.dropdown-menu
-								li.kopie
-									a(href='#') Dropdown2 Link 4
-								li
-									a(href='#') Dropdown2 Submenu Link 4.1
-								li
-									a(href='#') Dropdown2 Submenu Link 4.2
-								li
-									a(href='#') Dropdown2 Submenu Link 4.3
-								li
-									a(href='#') Dropdown2 Submenu Link 4.4
-						li.dropdown.dropdown-submenu
-							a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown2 Link 5
-							ul.dropdown-menu
-								li.kopie
-									a(href='#') Dropdown Link 5
-								li
-									a(href='#') Dropdown2 Submenu Link 5.1
-								li
-									a(href='#') Dropdown2 Submenu Link 5.2
-								li
-									a(href='#') Dropdown2 Submenu Link 5.3
-								li.dropdown.dropdown-submenu
-									a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown Submenu Link 5.4
-									ul.dropdown-menu
-										li.kopie
-											a(href='#') Dropdown2 Submenu Link 5.4
-										li
-											a(href='#') Dropdown2 Submenu Link 5.4.1
-										li
-											a(href='#') Dropdown2 Submenu Link 5.4.2
 
 
 			ul.nav.navbar-nav.navbar-right
