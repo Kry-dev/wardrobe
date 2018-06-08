@@ -74,7 +74,7 @@
                     a(href='#Product-descr', data-toggle='tab') Product
                 li
                     a(href='#Comments', data-toggle='tab') Comments (0)
-            .tab-content
+            .tab-content.bg-white
                 #Product-descr.tab-pane.active
                     .productInfo-header
                         a(href="#")
@@ -164,6 +164,39 @@
                                     'does not want to trade')
                                         .fa.fa-long-arrow-left
                                         .fa.fa-long-arrow-right
+                .relatedProducts
+                    ul#relatedProducts.relatedProducts-tabs.nav.nav-tabs
+                        li.active
+                            a(href='#closet', data-toggle='tab') closet
+                        li
+                            a(href='#related', data-toggle='tab') related)
+                    .relatedProduct-content.tab-content
+                        #closet.tab-pane.active
+                            .col-lg-12.px-0
+                                .col-md-5th-1.col-sm-4.col-md-offset-0.col-sm-offset-2
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                        #related.tab-pane
+                            .col-lg-12.px-0
+                                .col-md-5th-1.col-sm-4.col-md-offset-0.col-sm-offset-2
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
+                                .col-md-5th-1.col-sm-4
+                                    include product-card-simple
 script.
     $('[data-toggle="tooltip"]').tooltip();
 
