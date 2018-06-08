@@ -1,0 +1,27 @@
+.rating{
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	span{
+		display: inline-block;
+		position: relative;
+		color: $white;
+		font-size: 30px;
+		width: 30px;
+	}
+	> span:hover {
+		cursor: pointer;
+		color: $primary;
+		-webkit-animation: mymove 2s;
+		animation: mymove 2s;
+		animation-direction:normal;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes mymove {
+		from {color: #fff;}
+		to {color: $primary;}
+	}
+}

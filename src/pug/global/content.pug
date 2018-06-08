@@ -44,7 +44,7 @@
     //.modal-dialog(role='document')
     //    button.close(type='button', data-dismiss='modal', aria-label='Close')
     //        span(aria-hidden='true') ×
-    .productInfo
+    .productInfo.mb-3
         .productInfo-col
             #myCarousel.productSlider.carousel.slide(data-ride='carousel')
                 // Indicators
@@ -132,9 +132,38 @@
                         span Add to cart
                 #Comments.tab-pane
                     | content 2
-        // /.modal-content
-    // /.modal-dialog
-// /.modal
+    .productInfo.my-3
+        .productInfo-col
+            .user-container
+                .profile-header(style="background-image: url('https://www.staticuw.com/image/cover/15032580259722.jpg');")
+                    .darken
+                        .container
+                            .upper
+                                .upper-item
+                                    .user-name Naomi
+                                    include rating
+                                .upper-item
+                                    a(href="#").user-logo
+                                        img.img-circle(src='https://www.staticuw.com/image/profile/5acf0c0fa5addaa4cf8bb1cb5054c.jpg')
+                                .upper-item
+                                    .users-count
+                                        i.fa.fa-users
+                                        | 1787
+                                    a(href="#").users-reviews
+                                        span 832
+                                        | reviews >
+                            .lower
+                                .lower-item
+                                    .country-flag
+                                        img(src="https://www.staticuw.com/assets/images/nl.png")
+                                .lower-item
+                                    button.btn-follow(type="button") Follow
+
+                                .lower-item
+                                    a.not-seller.white-tooltip(href='#', data-toggle='tooltip', data-placement='top', title='This seller ' +
+                                    'does not want to trade')
+                                        .fa.fa-long-arrow-left
+                                        .fa.fa-long-arrow-right
 script.
     $('[data-toggle="tooltip"]').tooltip();
 

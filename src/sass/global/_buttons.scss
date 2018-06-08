@@ -252,3 +252,17 @@ button.close{
 		outline: none;
 	}
 }
+button.btn-follow{
+	text-transform: uppercase;
+	text-align: center;
+	transition: all .2s cubic-bezier(.645,.045,.355,1);
+	-webkit-backface-visibility: hidden;
+	height: 30px;
+	border-radius: 15px;
+	border: 2px solid #fff;
+	color: #fff;
+	background-color: transparent;
+	box-sizing: border-box;
+	padding: 0 20px;
+	cursor: pointer;
+}

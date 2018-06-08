@@ -270,19 +270,141 @@
 		.fa{
 			margin: 5px;
 		}
-		.white-tooltip + .tooltip > .tooltip-inner {
-			background-color: #fff;
-			color: #000;
-			opacity: 1;
-			padding: 20px;
-			font-size: 14px;
-			min-width: 200px;
-			min-height:60px;
-			text-align: center;
-			box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-
+	}
+	.user-container {
+		width: 100%;
+		pointer-events: all;
+		.profile-header{
+			display: flex;
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			position: relative;
+			font-size: 16px;
+			line-height: 1.8em;
+			font-weight: 500;
 		}
-		.white-tooltip + .tooltip > .tooltip-arrow { border-top-color:#fff; }
+		.darken{
+			background-color: rgba(33,34,31,.35);
+			width: 100%;
+			text-align: center;
+			padding: 25px 0;
+			box-sizing: border-box;
+			.container{
+				width: 40%;
+			}
+		}
+		.upper{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			align-items: center;
+			&-item{
+				display: flex;
+				width: 100%;
+				align-items: center;
+				flex-direction: column;
+			}
+		}
+		.user-name{
+			font-size: 18px;
+			text-align: right;
+		}
+		.rating {
+			span{
+				font-size: 14px;
+				width: 15px;
+			}
+			.fa{
+				font-size: 14px;
+			}
+		}
+		.user-logo{
+			display: block;
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0,0,0,.3);
+			img{
+				width: 100%;
+			}
+		}
+		.users-count,
+		.users-reviews{
+			text-align: left;
+			color: $white;
+			font-size: 18px;
+			.fa,
+			span{
+				margin-right: 10px;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.lower{
+			display: flex;
+			height: 30px;
+			margin-top: 20px;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			align-items: center;
+			&-item{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+			}
+		}
+		.country-flag{
+			justify-self: flex-end;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			overflow: hidden;
+			text-align: right;
+			img{
+				width: 100%;
+			}
+		}
+		.not-seller{
+			display: block;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			background: $white;
+			position: relative;
+			.fa{
+
+				font-size: 18px;
+				position: absolute;
+				color: #000000;
+				&.fa-long-arrow-left{
+					top: 5px;
+					left: 6px;
+				}
+				&.fa-long-arrow-right{
+					top: 10px;
+					left: 7px;
+				}
+			}
+			&:after{
+				content: "";
+				display: block;
+				width: 27px;
+				height: 2px;
+				left: 2px;
+				top: 15px;
+				background: rgba(0, 0, 0, 0.5);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.6705882352941176);
+				position: absolute;
+				transform: rotate(40deg);
+			}
+		}
 	}
 
 }
