@@ -266,3 +266,20 @@ button.btn-follow{
 	padding: 0 20px;
 	cursor: pointer;
 }
+.btn{
+	&-dark{
+		border-radius: 0;
+		color: $white;
+		text-transform: uppercase;
+		background-color: #212229;
+		text-align: center;
+		font-weight: lighter;
+		&:hover,
+		&:focus{
+			outline: none;
+			cursor: pointer;
+			color: $white;
+			background-color: lighten(#212229, 10%);
+		}
+	}
+}

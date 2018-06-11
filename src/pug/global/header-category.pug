@@ -1,21 +1,95 @@
-#category.navbar-collapse
+form#category.category-filter.navbar-collapse
     .container
         ul.nav.navbar-nav
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Category
-                    ul.dropdown-menu(role='menu')
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .form-group.form-group-select
+                            select.form-control
+                                option(value='Shoes' selected='selected') Shoes
+                                option(value='Dresses and Skirts' ) Dresses and Skirts
+                                option(value='Coats') Coats
+                                option(value='Trousers') Trousers
+                                option(value='Jeans') Jeans
+                                option(value='Bags' ) Bags
+                                option(value='Vintage' ) Vintage
+                                option(value='Designer' ) Designer
+                                option(value='Tops' ) Tops
+                                option(value='Shirts' ) Shirts
+                                option(value='Dress Shirts') Dress Shirts
+                                option(value='Jumpers & Cardigans') Jumpers &amp; Cardigans
+                                option(value='Cosmetics') Cosmetics
+                                option(value='Jewelry') Jewelry
+                                option(value='Accessories' ) Accessories
+                        .form-group.form-group-select
+                            select.form-control
+                                option(label='Shoes' value='number:31' selected='selected') All Shoes
+                                option(label='Dresses and Skirts' value='number:10') Dresses and Skirts
+                                option(label='Coats' value='number:50') Coats
+                                option(label='Trousers' value='number:91') Trousers
+                                option(label='Jeans' value='number:49') Jeans
+                                option(label='Bags' value='number:1') Bags
+                                option(label='Vintage' value='number:77') Vintage
+                                option(label='Designer' value='number:114') Designer
+                                option(label='Tops' value='number:48') Tops
+                                option(label='Shirts' value='number:74') Shirts
+                                option(label='Dress Shirts' value='number:67') Dress Shirts
+                                option(label='Jumpers & Cardigans' value='number:54') Jumpers &amp; Cardigans
+                                option(label='Cosmetics' value='number:150') Cosmetics
+                                option(label='Jewelry' value='number:180') Jewelry
+                                option(label='Accessories' value='number:17') Accessories
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
 
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Size
                 ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' checked=)
+                                span.label-text XXXS
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='')
+                                span.label-text XXS
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text XS
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text S
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text M
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text L
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text XL
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text XXl
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text XXXL
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
+
+
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Shoe size
                 ul.dropdown-menu(role='menu')

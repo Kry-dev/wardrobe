@@ -69,9 +69,6 @@
 		display: none;
 	}
 	.navbar-nav{
-		float: none;
-		margin: 0 auto;
-		display: table;
 	}
 	li{
 		> a{
@@ -95,6 +92,9 @@
 				-webkit-backface-visibility: hidden;
 			}
 		}
+	}
+	li.open > a.dropdown-toggle:after{
+		transform: rotate(180deg);
 	}
 }
 .navbar-toggle{

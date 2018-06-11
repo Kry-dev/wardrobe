@@ -199,18 +199,112 @@
             <li><a href="#"><span class="fa fa-search" aria-hidden="true"></span></a></li>
           </ul>
         </div>
-        <div class="navbar-collapse" id="category">
+        <form class="category-filter navbar-collapse" id="category">
           <div class="container">
             <ul class="nav navbar-nav">
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                  </ul></a></li>
+              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category</a>
+                <div class="dropdown-menu" role="menu">
+                  <div class="dropdown-menu__wrap">
+                    <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
+                    -->
+                    <div class="form-group form-group-select">
+                      <select class="form-control">
+                        <option value="Shoes" selected="selected">Shoes</option>
+                        <option value="Dresses and Skirts">Dresses and Skirts</option>
+                        <option value="Coats">Coats</option>
+                        <option value="Trousers">Trousers</option>
+                        <option value="Jeans">Jeans</option>
+                        <option value="Bags">Bags</option>
+                        <option value="Vintage">Vintage</option>
+                        <option value="Designer">Designer</option>
+                        <option value="Tops">Tops</option>
+                        <option value="Shirts">Shirts</option>
+                        <option value="Dress Shirts">Dress Shirts</option>
+                        <option value="Jumpers &amp; Cardigans">Jumpers &amp; Cardigans</option>
+                        <option value="Cosmetics">Cosmetics</option>
+                        <option value="Jewelry">Jewelry</option>
+                        <option value="Accessories">Accessories</option>
+                      </select>
+                    </div>
+                    <div class="form-group form-group-select">
+                      <select class="form-control">
+                        <option label="Shoes" value="number:31" selected="selected">All Shoes</option>
+                        <option label="Dresses and Skirts" value="number:10">Dresses and Skirts</option>
+                        <option label="Coats" value="number:50">Coats</option>
+                        <option label="Trousers" value="number:91">Trousers</option>
+                        <option label="Jeans" value="number:49">Jeans</option>
+                        <option label="Bags" value="number:1">Bags</option>
+                        <option label="Vintage" value="number:77">Vintage</option>
+                        <option label="Designer" value="number:114">Designer</option>
+                        <option label="Tops" value="number:48">Tops</option>
+                        <option label="Shirts" value="number:74">Shirts</option>
+                        <option label="Dress Shirts" value="number:67">Dress Shirts</option>
+                        <option label="Jumpers &amp; Cardigans" value="number:54">Jumpers &amp; Cardigans</option>
+                        <option label="Cosmetics" value="number:150">Cosmetics</option>
+                        <option label="Jewelry" value="number:180">Jewelry</option>
+                        <option label="Accessories" value="number:17">Accessories</option>
+                      </select>
+                    </div>
+                    <div class="form-group m-auto">
+                      <button class="btn btn-dark w-100">Confirm</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Size</a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
+                  <div class="dropdown-menu__wrap">
+                    <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
+                    -->
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value="" checked="checked"/><span class="label-text">XXXS</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">XXS</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">XS</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">S</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">M</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">L</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">XL</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">XXl</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label class="toggle">
+                        <input type="checkbox" name="toggle" value=""/><span class="label-text">XXXL</span>
+                      </label>
+                    </div>
+                    <div class="form-group m-auto">
+                      <button class="btn btn-dark w-100">Confirm</button>
+                    </div>
+                  </div>
                 </ul>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Shoe size</a>
@@ -257,7 +351,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </form>
       </div>
     </nav>
     <div class="toggled" id="wrapper">
@@ -280,7 +374,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12">
-                <div class="jumbotron text-center">
+                <div class="jumbotron text-center mb-0">
                   <h1 class="text-bold text-uppercase">SECONDHAND WOMENSWEAR</h1>
                   <p>View all women's items on United Wardrobe, everything from sneakers to winter coats.</p>
                   <h3 class="text-bold text-uppercase">You might also like:</h3>

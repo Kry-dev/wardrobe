@@ -1,0 +1,110 @@
+.category-filter{
+	.container{
+		width: 80%;
+		max-width: 80%;
+	}
+	.navbar-nav{
+
+		margin: 0 auto;
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+		.dropdown-menu{
+			left: -50%;
+			width: 230px;
+			background: $white;
+			transform: tranclateX(-50%);
+			padding: 0px;
+			&__wrap{
+				position: relative;
+				padding: 30px 20px;
+				display: block;
+				width: 100%;
+				&:before{
+					position: absolute;
+					font-family: "FontAwesome",sans-serif;
+					content: '\f0d8';
+					left: 50%;
+					color: #fff;
+					transform: translateX(-50%);
+					pointer-events: none;
+					top: -12px;
+				}
+			}
+			.close{
+				position: absolute;
+				right: 5px;
+				top: 0;
+				color: #000;
+				font-weight: 300;
+				opacity: 1;
+			}
+			.form-group{
+				&-select{
+					position: relative;
+					&:after{
+						position: absolute;
+						right: 10px;
+						top: 50%;
+						transform: translateY(-50%);
+						content: '\f107';
+						font-family: "FontAwesome",sans-serif;
+						pointer-events: none;
+					}
+				}
+			}
+			select.form-control {
+				position: relative;
+				padding: 15px 35px 15px 25px;
+				border-radius: 0;
+				color: inherit;
+				height: auto;
+				box-sizing: border-box;
+				width: 100%;
+				background-color: #f5f5f5;
+				border: 1px solid #ebebeb;
+				box-shadow: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				-ms-appearance: none;
+				-o-appearance: none;
+				appearance: none;
+				text-overflow: '';
+			}
+		}
+	}
+}
+.checkbox{
+	&-label{
+		text-align: left;
+		width: 100%;
+		&:before{
+			display: block;
+			font-family: "FontAwesome",sans-serif;
+			content: "\f096";
+			width: 1em;
+			margin-right: .5em;
+			position: absolute;
+			left: 0;
+			z-index: 10;
+		}
+		input[type=checkbox], input[type=radio] {
+			opacity: 0;
+		}
+
+	}
+
+	//input[type=checkbox]+label.checkbox-label {
+	//	font-size: 1.1em;
+	//	cursor: pointer;
+	//	display: inline-block;
+	//	padding-bottom: .5em;
+	//	color: #000000;
+	//}
+
+
+}
+input[type=checkbox]:checked + label.checkbox-label:before {
+	content: "\f14a" !important;
+}
