@@ -46,7 +46,7 @@ form#category.category-filter.navbar-collapse
 
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Size
-                ul.dropdown-menu(role='menu')
+                .dropdown-menu(role='menu')
                     .dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
@@ -89,21 +89,62 @@ form#category.category-filter.navbar-collapse
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
 
-
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Shoe size
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' checked=)
+                                span.label-text 30
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='')
+                                span.label-text 30,5
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 31
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 31.5
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 32
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 32.5
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 33
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 33.5
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text 34
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Price
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .form-group.price-input
+                            input.form-control(type="text" placeholder="0.00")
+                        .form-group
+                            label.w-100.text-center.text-uppercase Up to:
+                        .form-group.price-input
+                            input.form-control(type="text" placeholder="100.00")
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Colour
                 ul.dropdown-menu(role='menu')
