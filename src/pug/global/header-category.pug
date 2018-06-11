@@ -1,4 +1,4 @@
-form#category.category-filter.navbar-collapse
+#category.category-filter.navbar-collapse
     .container
         ul.nav.navbar-nav
             li
@@ -92,7 +92,7 @@ form#category.category-filter.navbar-collapse
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Shoe size
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
@@ -136,7 +136,7 @@ form#category.category-filter.navbar-collapse
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Price
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .form-group.price-input
@@ -150,7 +150,7 @@ form#category.category-filter.navbar-collapse
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Colour
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
@@ -174,88 +174,88 @@ form#category.category-filter.navbar-collapse
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Condition
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='' checked=)
+                                input(type='radio' name="radio" value='New' checked=)
                                 span.label-text.text-bold.text-uppercase new
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Mint condition')
                                 span.label-text.text-bold.text-uppercase mint condition
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='' )
+                                input(type='radio' name="radio" value='Used' )
                                 span.label-text.text-bold.text-uppercase used
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Women
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='' checked=)
+                                input(type='radio' name="radio" value='Men' checked=)
                                 span.label-text.text-bold.text-uppercase men
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Women')
                                 span.label-text.text-bold.text-uppercase women
                         .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
+                            a.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Country
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='' checked=)
+                                input(type='radio' name="radio" value='The Netherlands' checked=)
                                 span.label-text.text-bold.text-uppercase The Netherlands
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Belgium')
                                 span.label-text.text-bold.text-uppercase Belgium
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='France')
                                 span.label-text.text-bold.text-uppercase France
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Germany')
                                 span.label-text.text-bold.text-uppercase Germany
                         .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
+                            a.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Recommended for you
                 .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
+                    form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='' checked=)
+                                input(type='radio' name="radio" value='Recommended for you')
                                 span.label-text.text-bold.text-uppercase Recommended for you
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Newest')
                                 span.label-text.text-bold.text-uppercase Newest
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Most viewed')
                                 span.label-text.text-bold.text-uppercase Most viewed
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Cheapest')
                                 span.label-text.text-bold.text-uppercase Cheapest
                         .checkbox
                             label
-                                input(type='radio' name="radio" value='')
+                                input(type='radio' name="radio" value='Most expensive')
                                 span.label-text.text-bold.text-uppercase Most expensive
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm

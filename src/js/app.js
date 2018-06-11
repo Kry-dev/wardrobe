@@ -30,6 +30,18 @@ $(document).ready(function () {
     $(".dropdown-menu__wrap > .close").on('click' , function () {
         console.log('click');
         $(this).closest('.dropdown-menu').dropdown("toggle");
-    })
+    });
 
+    $(".btn-dark").click(function (e) {
+        var currentForm = $(this).closest('.dropdown-menu__wrap');
+        var currentRadio = currentForm .find("input[name='radio']:checked");
+        var currentVal = currentRadio.val();
+        var filterName = currentForm.closest('li').find('.dropdown-toggle');
+        var filterNameVal = filterName.text();
+        e.preventDefault();
+        if(filterNameVal != currentVal){
+            $(filterName).addClass('filter-selected');
+        }
+        $(filterName).html(currentVal);
+    });
 });

@@ -80,20 +80,26 @@
 			font-size: 12px;
 			font-weight: 500;
 			color: #000000;
-			&.dropdown-toggle:after{
+			position: relative;
+			float: left;
+			&.dropdown-toggle:before{
 				font-family: "FontAwesome",sans-serif;
 				content: '\f107';
 				width: 10px;
 				margin-left: 3px;
 				text-align: center;
 				display: inline-block;
+				float: right;
 				transform: rotate(0deg);
 				transition: all .3s ease;
 				-webkit-backface-visibility: hidden;
 			}
+			&:hover{
+				background: $white;
+			}
 		}
 	}
-	li.open > a.dropdown-toggle:after{
+	li.open > a.dropdown-toggle:before{
 		transform: rotate(180deg);
 	}
 	.reset-filters{
@@ -115,6 +121,7 @@
 		}
 		&:focus,
 		&:active{
+
 			.fa{
 				transition: all .3s ease;
 				transform: rotate(360deg);

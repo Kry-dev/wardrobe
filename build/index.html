@@ -199,7 +199,7 @@
             <li><a href="#"><span class="fa fa-search" aria-hidden="true"></span></a></li>
           </ul>
         </div>
-        <form class="category-filter navbar-collapse" id="category">
+        <div class="category-filter navbar-collapse" id="category">
           <div class="container">
             <ul class="nav navbar-nav">
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category</a>
@@ -309,7 +309,7 @@
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Shoe size</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
@@ -360,12 +360,12 @@
                     <div class="form-group m-auto">
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Price</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="form-group price-input">
@@ -380,12 +380,12 @@
                     <div class="form-group m-auto">
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Colour</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
@@ -411,121 +411,117 @@
                     <div class="form-group m-auto">
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Condition</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value="" checked="checked"/><span class="label-text text-bold text-uppercase">new</span>
+                        <input type="radio" name="radio" value="New" checked="checked"/><span class="label-text text-bold text-uppercase">new</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">mint condition</span>
+                        <input type="radio" name="radio" value="Mint condition"/><span class="label-text text-bold text-uppercase">mint condition</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">used</span>
+                        <input type="radio" name="radio" value="Used"/><span class="label-text text-bold text-uppercase">used</span>
                       </label>
                     </div>
                     <div class="form-group m-auto">
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Women</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value="" checked="checked"/><span class="label-text text-bold text-uppercase">men</span>
+                        <input type="radio" name="radio" value="Men" checked="checked"/><span class="label-text text-bold text-uppercase">men</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">women</span>
+                        <input type="radio" name="radio" value="Women"/><span class="label-text text-bold text-uppercase">women</span>
                       </label>
                     </div>
-                    <div class="form-group m-auto">
-                      <button class="btn btn-dark w-100">Confirm</button>
-                    </div>
-                  </div>
+                    <div class="form-group m-auto"><a class="btn btn-dark w-100">Confirm</a></div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Country</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value="" checked="checked"/><span class="label-text text-bold text-uppercase">The Netherlands</span>
+                        <input type="radio" name="radio" value="The Netherlands" checked="checked"/><span class="label-text text-bold text-uppercase">The Netherlands</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Belgium</span>
+                        <input type="radio" name="radio" value="Belgium"/><span class="label-text text-bold text-uppercase">Belgium</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">France</span>
+                        <input type="radio" name="radio" value="France"/><span class="label-text text-bold text-uppercase">France</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Germany</span>
+                        <input type="radio" name="radio" value="Germany"/><span class="label-text text-bold text-uppercase">Germany</span>
                       </label>
                     </div>
-                    <div class="form-group m-auto">
-                      <button class="btn btn-dark w-100">Confirm</button>
-                    </div>
-                  </div>
+                    <div class="form-group m-auto"><a class="btn btn-dark w-100">Confirm</a></div>
+                  </form>
                 </div>
               </li>
               <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Recommended for you</a>
                 <div class="dropdown-menu" role="menu">
-                  <div class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value="" checked="checked"/><span class="label-text text-bold text-uppercase">Recommended for you</span>
+                        <input type="radio" name="radio" value="Recommended for you"/><span class="label-text text-bold text-uppercase">Recommended for you</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Newest</span>
+                        <input type="radio" name="radio" value="Newest"/><span class="label-text text-bold text-uppercase">Newest</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Most viewed</span>
+                        <input type="radio" name="radio" value="Most viewed"/><span class="label-text text-bold text-uppercase">Most viewed</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Cheapest</span>
+                        <input type="radio" name="radio" value="Cheapest"/><span class="label-text text-bold text-uppercase">Cheapest</span>
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="radio" name="radio" value=""/><span class="label-text text-bold text-uppercase">Most expensive</span>
+                        <input type="radio" name="radio" value="Most expensive"/><span class="label-text text-bold text-uppercase">Most expensive</span>
                       </label>
                     </div>
                     <div class="form-group m-auto">
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </li>
               <li>
@@ -533,7 +529,7 @@
               </li>
             </ul>
           </div>
-        </form>
+        </div>
       </div>
     </nav>
     <div class="toggled" id="wrapper">

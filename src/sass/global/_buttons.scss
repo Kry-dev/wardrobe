@@ -268,15 +268,15 @@ button.btn-follow{
 }
 .btn{
 	&-dark{
+		display: inline-block;
 		border-radius: 0;
-		color: $white;
+		color: $white !important;
 		text-transform: uppercase;
-		background-color: #212229;
+		background-color: #212229!important;
 		text-align: center;
 		font-weight: lighter;
 		cursor: pointer;
 		padding: 10px 20px;
-		display: inline-block;
 		border: 1px solid #212229;
 		text-decoration: none;
 		&:hover,
@@ -284,7 +284,7 @@ button.btn-follow{
 			outline: none;
 			cursor: pointer;
 			color: $white;
-			background-color: lighten(#212229, 10%);
+			background-color: lighten(#212229, 10%)!important;
 		}
 	}
 }

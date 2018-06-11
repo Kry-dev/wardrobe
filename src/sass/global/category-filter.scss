@@ -111,6 +111,7 @@
 		}
 	}
 }
+
 .checkbox{
 	&-label{
 		text-align: left;
@@ -143,4 +144,12 @@
 }
 input[type=checkbox]:checked + label.checkbox-label:before {
 	content: "\f14a" !important;
+}
+.filter-selected:after{
+	display: inline-block;
+	content: "\f00d";
+	font-family: "FontAwesome", sans-serif;
+	color: red;
+	float: right;
+	margin: 0 5px;
 }
