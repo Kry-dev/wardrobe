@@ -145,38 +145,121 @@ form#category.category-filter.navbar-collapse
                             label.w-100.text-center.text-uppercase Up to:
                         .form-group.price-input
                             input.form-control(type="text" placeholder="100.00")
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Colour
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' checked=)
+                                span.label-text.text-bold.text-uppercase black
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='')
+                                span.label-text.text-bold.text-uppercase brown
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text.text-bold.text-uppercase white
+                        .checkbox
+                            label.toggle
+                                input(type='checkbox' name="toggle" value='' )
+                                span.label-text.text-bold.text-uppercase red
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Condition
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='' checked=)
+                                span.label-text.text-bold.text-uppercase new
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase mint condition
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='' )
+                                span.label-text.text-bold.text-uppercase used
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Women
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='' checked=)
+                                span.label-text.text-bold.text-uppercase men
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase women
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Country
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='' checked=)
+                                span.label-text.text-bold.text-uppercase The Netherlands
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Belgium
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase France
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Germany
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
             li
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Recommended for you
-                ul.dropdown-menu(role='menu')
-                    li
-                        a(href='#') Action
-                    li
-                        a(href='#') Another action
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='' checked=)
+                                span.label-text.text-bold.text-uppercase Recommended for you
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Newest
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Most viewed
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Cheapest
+                        .checkbox
+                            label
+                                input(type='radio' name="radio" value='')
+                                span.label-text.text-bold.text-uppercase Most expensive
+                        .form-group.m-auto
+                            button.btn.btn-dark.w-100 Confirm
+            li
+                button(type="reset").reset-filters
+                    i.fa.fa-undo
+                    | Reset filters

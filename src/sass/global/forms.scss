@@ -25,6 +25,9 @@ label{
 	position: relative;
 	cursor: pointer;
 }
+.checkbox label{
+	padding-left: 0;
+}
 
 input[type="checkbox"], input[type="radio"]{
 	position: absolute;
@@ -80,7 +83,7 @@ input[type="radio"] + .label-text:before{
 
 input[type="radio"]:checked + .label-text:before{
 	content: "\f192";
-	color: #8e44ad;
+	color: #000;
 	animation: effect 250ms ease-in;
 }
 

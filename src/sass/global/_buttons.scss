@@ -274,6 +274,11 @@ button.btn-follow{
 		background-color: #212229;
 		text-align: center;
 		font-weight: lighter;
+		cursor: pointer;
+		padding: 10px 20px;
+		display: inline-block;
+		border: 1px solid #212229;
+		text-decoration: none;
 		&:hover,
 		&:focus{
 			outline: none;

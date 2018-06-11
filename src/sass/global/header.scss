@@ -96,6 +96,34 @@
 	li.open > a.dropdown-toggle:after{
 		transform: rotate(180deg);
 	}
+	.reset-filters{
+		cursor: pointer;
+		padding: 0 15px;
+		line-height: 40px;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 500;
+		color: #000000;
+		border: 0;
+		&:focus,
+		&:hover{
+			outline: none;
+			cursor: pointer;
+			text-decoration: none;
+			background-color: #eee;
+		}
+		&:focus,
+		&:active{
+			.fa{
+				transition: all .3s ease;
+				transform: rotate(360deg);
+			}
+		}
+		.fa{
+			margin-right: 10px;
+		}
+	}
 }
 .navbar-toggle{
 	display: block;
