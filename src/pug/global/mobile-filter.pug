@@ -1,49 +1,10 @@
-#category.category-filter.navbar-collapse
+#mobile-filter.mobile-filter
     .container
         ul.nav.navbar-nav
-            li.category-box
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Category
-                .dropdown-menu(role='menu')
-                    .dropdown-menu__wrap
-                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
-                            span(aria-hidden='true') ×
-                        .form-group.form-group-select
-                            select.form-control
-                                option(value='Shoes' selected='selected') Shoes
-                                option(value='Dresses and Skirts' ) Dresses and Skirts
-                                option(value='Coats') Coats
-                                option(value='Trousers') Trousers
-                                option(value='Jeans') Jeans
-                                option(value='Bags' ) Bags
-                                option(value='Vintage' ) Vintage
-                                option(value='Designer' ) Designer
-                                option(value='Tops' ) Tops
-                                option(value='Shirts' ) Shirts
-                                option(value='Dress Shirts') Dress Shirts
-                                option(value='Jumpers & Cardigans') Jumpers &amp; Cardigans
-                                option(value='Cosmetics') Cosmetics
-                                option(value='Jewelry') Jewelry
-                                option(value='Accessories' ) Accessories
-                        .form-group.form-group-select
-                            select.form-control
-                                option(label='Shoes' value='number:31' selected='selected') All Shoes
-                                option(label='Dresses and Skirts' value='number:10') Dresses and Skirts
-                                option(label='Coats' value='number:50') Coats
-                                option(label='Trousers' value='number:91') Trousers
-                                option(label='Jeans' value='number:49') Jeans
-                                option(label='Bags' value='number:1') Bags
-                                option(label='Vintage' value='number:77') Vintage
-                                option(label='Designer' value='number:114') Designer
-                                option(label='Tops' value='number:48') Tops
-                                option(label='Shirts' value='number:74') Shirts
-                                option(label='Dress Shirts' value='number:67') Dress Shirts
-                                option(label='Jumpers & Cardigans' value='number:54') Jumpers &amp; Cardigans
-                                option(label='Cosmetics' value='number:150') Cosmetics
-                                option(label='Jewelry' value='number:180') Jewelry
-                                option(label='Accessories' value='number:17') Accessories
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
-
+            li.reset-filters-box
+                button(type="reset").reset-filters
+                    i.fa.fa-undo
+                    | Reset filters
             li.size-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Size
                 .dropdown-menu(role='menu')
@@ -86,8 +47,6 @@
                             label.toggle
                                 input(type='checkbox' name="toggle" value='' )
                                 span.label-text XXXL
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
 
             li.shoe-size-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
@@ -132,8 +91,46 @@
                             label.toggle
                                 input(type='checkbox' name="toggle" value='' )
                                 span.label-text 34
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
+            li.category-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Category
+                .dropdown-menu(role='menu')
+                    .dropdown-menu__wrap
+                        //button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        .form-group.form-group-select
+                            select.form-control
+                                option(value='Shoes' selected='selected') Shoes
+                                option(value='Dresses and Skirts' ) Dresses and Skirts
+                                option(value='Coats') Coats
+                                option(value='Trousers') Trousers
+                                option(value='Jeans') Jeans
+                                option(value='Bags' ) Bags
+                                option(value='Vintage' ) Vintage
+                                option(value='Designer' ) Designer
+                                option(value='Tops' ) Tops
+                                option(value='Shirts' ) Shirts
+                                option(value='Dress Shirts') Dress Shirts
+                                option(value='Jumpers & Cardigans') Jumpers &amp; Cardigans
+                                option(value='Cosmetics') Cosmetics
+                                option(value='Jewelry') Jewelry
+                                option(value='Accessories' ) Accessories
+                        .form-group.form-group-select
+                            select.form-control
+                                option(label='Shoes' value='number:31' selected='selected') All Shoes
+                                option(label='Dresses and Skirts' value='number:10') Dresses and Skirts
+                                option(label='Coats' value='number:50') Coats
+                                option(label='Trousers' value='number:91') Trousers
+                                option(label='Jeans' value='number:49') Jeans
+                                option(label='Bags' value='number:1') Bags
+                                option(label='Vintage' value='number:77') Vintage
+                                option(label='Designer' value='number:114') Designer
+                                option(label='Tops' value='number:48') Tops
+                                option(label='Shirts' value='number:74') Shirts
+                                option(label='Dress Shirts' value='number:67') Dress Shirts
+                                option(label='Jumpers & Cardigans' value='number:54') Jumpers &amp; Cardigans
+                                option(label='Cosmetics' value='number:150') Cosmetics
+                                option(label='Jewelry' value='number:180') Jewelry
+                                option(label='Accessories' value='number:17') Accessories
             li.price-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     span.filter-title Price
@@ -147,8 +144,6 @@
                             label.w-100.text-center.text-uppercase Up to:
                         .form-group.price-input
                             input.form-control(type="text" placeholder="100.00")
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
             li.colour-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     span.filter-title Colour
@@ -174,7 +169,7 @@
                                 span.label-text.text-bold.text-uppercase red
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-                    .dropdown-menu__wrap.visible-md.visible-sm.visible-xs
+                    .dropdown-menu__wrap
                         .form-group.mb-0
                             input.form-control(type="search" , autocomplete = "on", placeholder="red")
             li.condition-box
@@ -196,13 +191,9 @@
                             label
                                 input(type='radio' name="radio" value='Used' )
                                 span.label-text.text-bold.text-uppercase used
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
             li.women-box
-                .dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     span.filter-title Women
-                button.clear-selected
-                    i.fa.fa-close
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -215,8 +206,6 @@
                             label
                                 input(type='radio' name="radio" value='Women')
                                 span.label-text.text-bold.text-uppercase women
-                        .form-group.m-auto
-                            a.btn.btn-dark.w-100 Confirm
             li.country-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     span.filter-title Country
@@ -240,13 +229,11 @@
                             label
                                 input(type='radio' name="radio" value='Germany')
                                 span.label-text.text-bold.text-uppercase Germany
-                        .form-group.m-auto
-                            a.btn.btn-dark.w-100 Confirm
             li.recommended-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
                     span.filter-title Recommended for you
                 .dropdown-menu(role='menu')
-                    form.dropdown-menu__wrap
+                    .dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
@@ -269,9 +256,3 @@
                             label
                                 input(type='radio' name="radio" value='Most expensive')
                                 span.label-text.text-bold.text-uppercase Most expensive
-                        .form-group.m-auto
-                            button.btn.btn-dark.w-100 Confirm
-            li.reset-filters-box
-                button(type="reset").reset-filters
-                    i.fa.fa-undo
-                    | Reset filters
