@@ -1,7 +1,7 @@
 #category.category-filter.navbar-collapse
     .container
         ul.nav.navbar-nav
-            li
+            li.category-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Category
                 .dropdown-menu(role='menu')
                     .dropdown-menu__wrap
@@ -44,7 +44,7 @@
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
 
-            li
+            li.size-box
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Size
                 .dropdown-menu(role='menu')
                     .dropdown-menu__wrap
@@ -89,8 +89,9 @@
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
 
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Shoe size
+            li.shoe-size-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Shoe size
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -133,24 +134,26 @@
                                 span.label-text 34
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Price
+            li.price-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Price
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .form-group.price-input
                             input.form-control(type="text" placeholder="0.00")
-                        .form-group
+                        .form-group.hidden-md.hidden-sm.hidden-xs
                             label.w-100.text-center.text-uppercase Up to:
                         .form-group.price-input
                             input.form-control(type="text" placeholder="100.00")
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Colour
+            li.colour-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Colour
                 .dropdown-menu(role='menu')
-                    form.dropdown-menu__wrap
+                    form.dropdown-menu__wrap.hidden-md.hidden-sm.hidden-xs
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
                             span(aria-hidden='true') ×
                         .checkbox
@@ -171,8 +174,12 @@
                                 span.label-text.text-bold.text-uppercase red
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Condition
+                    .dropdown-menu__wrap.visible-md.visible-sm.visible-xs
+                        .form-group.mb-0
+                            input.form-control(type="search" , autocomplete = "on")
+            li.condition-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Condition
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -191,8 +198,11 @@
                                 span.label-text.text-bold.text-uppercase used
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Women
+            li.women-box
+                .dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Women
+                button.clear-selected
+                    i.fa.fa-close
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -207,8 +217,9 @@
                                 span.label-text.text-bold.text-uppercase women
                         .form-group.m-auto
                             a.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Country
+            li.country-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Country
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -231,8 +242,9 @@
                                 span.label-text.text-bold.text-uppercase Germany
                         .form-group.m-auto
                             a.btn.btn-dark.w-100 Confirm
-            li
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') Recommended for you
+            li.recommended-box
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                    span.filter-title Recommended for you
                 .dropdown-menu(role='menu')
                     form.dropdown-menu__wrap
                         //button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -259,7 +271,7 @@
                                 span.label-text.text-bold.text-uppercase Most expensive
                         .form-group.m-auto
                             button.btn.btn-dark.w-100 Confirm
-            li
+            li.reset-filters-box
                 button(type="reset").reset-filters
                     i.fa.fa-undo
                     | Reset filters

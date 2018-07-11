@@ -196,13 +196,13 @@
             <li class="border border-left"><a href="#"><span class="fa fa-user" aria-hidden="true"></span></a></li>
             <li><a href="#"><span class="fa fa-home" aria-hidden="true"></span></a></li>
             <li class="border border-right"><a href="#"><span class="fa fa-shopping-cart"></span></a></li>
-            <li><a href="#"><span class="fa fa-search" aria-hidden="true"></span></a></li>
+            <li><a href="#" id="showMobileSearch"><span class="fa fa-search" aria-hidden="true"></span></a></li>
           </ul>
         </div>
         <div class="category-filter navbar-collapse" id="category">
           <div class="container">
             <ul class="nav navbar-nav">
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category</a>
+              <li class="category-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category</a>
                 <div class="dropdown-menu" role="menu">
                   <div class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -251,7 +251,7 @@
                   </div>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Size</a>
+              <li class="size-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Size</a>
                 <div class="dropdown-menu" role="menu">
                   <div class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -307,7 +307,7 @@
                   </div>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Shoe size</a>
+              <li class="shoe-size-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Shoe size</span></a>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -363,7 +363,7 @@
                   </form>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Price</a>
+              <li class="price-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Price</span></a>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -371,7 +371,7 @@
                     <div class="form-group price-input">
                       <input class="form-control" type="text" placeholder="0.00"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group hidden-md hidden-sm hidden-xs">
                       <label class="w-100 text-center text-uppercase">Up to:</label>
                     </div>
                     <div class="form-group price-input">
@@ -383,9 +383,9 @@
                   </form>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Colour</a>
+              <li class="colour-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Colour</span></a>
                 <div class="dropdown-menu" role="menu">
-                  <form class="dropdown-menu__wrap">
+                  <form class="dropdown-menu__wrap hidden-md hidden-sm hidden-xs">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
                     -->
                     <div class="checkbox">
@@ -412,9 +412,14 @@
                       <button class="btn btn-dark w-100">Confirm</button>
                     </div>
                   </form>
+                  <div class="dropdown-menu__wrap visible-md visible-sm visible-xs">
+                    <div class="form-group mb-0">
+                      <input class="form-control" type="search" autocomplete="on"/>
+                    </div>
+                  </div>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Condition</a>
+              <li class="condition-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Condition</span></a>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -440,7 +445,9 @@
                   </form>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Women</a>
+              <li class="women-box">
+                <div class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Women</span></div>
+                <button class="clear-selected"><i class="fa fa-close"></i></button>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -459,7 +466,7 @@
                   </form>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Country</a>
+              <li class="country-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Country</span></a>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -488,7 +495,7 @@
                   </form>
                 </div>
               </li>
-              <li><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Recommended for you</a>
+              <li class="recommended-box"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span class="filter-title">Recommended for you</span></a>
                 <div class="dropdown-menu" role="menu">
                   <form class="dropdown-menu__wrap">
                     <!--button.close(type='button', data-dismiss='modal', aria-label='Close')span(aria-hidden='true') ×
@@ -524,7 +531,7 @@
                   </form>
                 </div>
               </li>
-              <li>
+              <li class="reset-filters-box">
                 <button class="reset-filters" type="reset"><i class="fa fa-undo"></i>Reset filters</button>
               </li>
             </ul>
@@ -704,6 +711,73 @@
                       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                       <p class="text-bold"> You may also like:</p><a class="d-block text-primary" href="#">Red Dress Maje</a><a class="d-block text-primary" href="#">Jimmy Choo shoes</a><a class="d-block text-primary" href="#">Balenciaga leather bag</a>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-search" id="mobileSearch">
+          <form class="form-search"><i class="fa fa-search"></i>
+            <input type="text" placeholder="Search products or people"/>
+            <button class="mobile-search-filter" type="button" id="mobile-search-filter"><i class="fa fa-filter"></i></button>
+          </form>
+          <div class="productModal">
+            <ul class="relatedProducts-tabs nav nav-tabs">
+              <li class="active"><a href="#products" data-toggle="tab">Products</a></li>
+              <li><a href="#people" data-toggle="tab">People</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="products">
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="people">
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
+                  </div>
+                </div>
+                <div class="search-item">
+                  <div class="search-item-img"><i class="fa fa-hashtag"></i></div>
+                  <div class="search-item-info">
+                    <div class="search-item-title">Gucci</div>
+                    <div class="search-item-subtitle"><i class="fa fa-archive item-icon"></i>2441 resultaten</div>
                   </div>
                 </div>
               </div>
