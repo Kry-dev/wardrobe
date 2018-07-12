@@ -47,7 +47,7 @@ customize and use as much of the existing components as possible.
 3. Your page must have `header` and `footer` elements
 ```pug
 doctype html
-html(lang='ro')
+html(lang='en')
 include head.pug
 body
   include header.pug
